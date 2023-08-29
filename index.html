@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DeliverEase</title>
+        <meta name="description" content="DeliverEase is an innovative platform designed to empower delivery partners and foster seamless connections between buyers and sellers without the need for intermediaries. With a user-friendly interface and efficient processes, DeliverEase aims to revolutionize the way goods are delivered, making it convenient for both consumers and businesses.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            /* Add your additional CSS styles here */
+    
+            /* Improve readability of ordered list */
+            .services .service ol {
+                list-style: none;
+                counter-reset: list-counter;
+                text-align: left;
+                padding-left: 30px;
+            }
+    
+            .services .service ol li {
+                position: relative;
+                margin-bottom: 15px;
+                padding-left: 40px;
+            }
+    
+            .services .service ol li:before {
+                content: counter(list-counter);
+                counter-increment: list-counter;
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 18px;
+                color: #ff6600; /* Change color */
+                font-weight: bold;
+            }
+    
+            /* Additional styles for a better look */
+            body {
+                font-family: 'Arial', sans-serif;
+            }
+    
+            .header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+            }
+    
+            .nav-links a {
+                color: #fff;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+    
+            .nav-links a:hover {
+                color: #ff6600;
+            }
+    
+            .hero {
+                background-image: url("hero-background.jpg");
+                background-size: cover;
+                background-position: center;
+                color: #fff;
+                text-align: center;
+                padding: 100px 0;
+            }
+    
+            .cta-button {
+                display: inline-block;
+                background-color: #ff6600;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+    
+            .cta-button:hover {
+                background-color: #ff8533;
+            }
+    
+            /* Add more styles for other sections and elements as needed */
+    
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">Logo</div>
+                <ul class="nav-links">
+                    <li><a href="https://github.com/TeamCodeArena/DeliverEase" target="_blank">GitHub</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sc-eACynP blHfte"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Our Website</h1>
+                <p>Empowering Delivery Partners, Connecting Communities</p>
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+        </section>
+    
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>DeliverEase is built on the foundation of empowering delivery partners, enabling them to earn income while providing efficient delivery services to the community. By bridging the gap between buyers and sellers directly, DeliverEase eliminates the need for intermediaries, leading to faster deliveries and reduced costs.</p>
+                <a href="#" class="learn-more-button">Learn More</a>
+            </div>
+        </section>
+    
+        <section id="services" class="services">
+            <h2>How it Works</h2>
+            <div class="service">
+                <div class="service-icon">Icon</div>
+                <h3>Order Placement</h3>
+                <ol>
+                    <li><em>Click Order: </em> To place an order, Buyers can click on the "Order Something" button on the homepage, which will lead them to the order details page</li>
+                    <li><em>Enter Delivery Details: </em> On the order details page, the Buyer can specify the delivery location, preferred delivery time, and any additional information relevant to the delivery</li>
+                    <li><em>Pickup Information: </em> They can also provide pickup details, including the location and time when the delivery partner should collect the item for delivery</li>
+                    <li><em>Submit Order: </em> After providing all the necessary information, the Buyer can submit the order request</li>
+                </ol>
+            </div>
+        </section>
+    
+        <section id="portfolio" class="portfolio">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-item">
+                <img src="portfolio-image.jpg" alt="Project Name">
+                <h3></h3>
+                <p></p>
+            </div>
+            <!-- Repeat portfolio items for each project -->
+        </section>
+    
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Feel free to get in touch with us!</p>
+            <a href="#" class="contact-button">Contact Now</a>
+        </section>
+    
+        <footer class="footer">
+            <div class="social-icons">
+                <a class="social-icon" href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a class="social-icon" href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a class="social-icon" href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2023 DeliverEase. All rights reserved.</p>
+        </footer>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
